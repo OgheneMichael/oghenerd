@@ -1,0 +1,23 @@
+{
+	"name": "portfolio",
+	"version": "0.0.1",
+	"description": "Portfolio web app for OgheNerd",
+	"main": "index.js",
+	"repository": "https://github.com/OgheneMichael/oghenerd.git",
+	"author": "OgheneMichael <zonalmeet@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"next": "^9.0.0",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"styled-components": "^4.3.2"
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.10.6"
+	}
+}
