@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import { Container } from "./common/Styles";
 
 export default () => (
 	<Container>
@@ -22,18 +23,11 @@ export default () => (
 	</Container>
 );
 
-const Container = styled.div`
-	padding: 0 15px;
-	margin: 0 auto;
-	max-width: 1100px;
-`;
-
-const Header = styled.div`
+const Header = styled.header`
 	margin-top: 38px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #05274e;
 `;
 
 const NavItem = styled.span`
