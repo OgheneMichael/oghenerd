@@ -1,13 +1,9 @@
-import styled from "styled-components";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 export default () => (
-	<div>
+	<React.Fragment>
 		<Header />
-		<Title>WELCOME</Title>
-	</div>
+		<Hero />
+	</React.Fragment>
 );
-
-const Title = styled.h1`
-	color: orangered;
-`;
