@@ -1,6 +1,6 @@
 import Document, { Head, Main, NextScript } from "next/document";
 // Import styled components ServerStyleSheet
-import styled, { ServerStyleSheet, createGlobalStyle } from "styled-components";
+import styled, { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
 	static getInitialProps({ renderPage }) {
@@ -31,16 +31,23 @@ export default class MyDocument extends Document {
 					/>
 					{this.props.styleTags}
 				</Head>
-				<GlobalStyle />
-				<Main />
-				<NextScript />
+				<Body>
+					<Main />
+					<NextScript />
+				</Body>
 			</html>
 		);
 	}
 }
 
-const GlobalStyle = createGlobalStyle.body` 
-		font-family: "Poppins", sans-serif;
-		background-color: #fff;
-		color: #05274e;
+// const GlobalStyle = createGlobalStyle.body`
+// 		font-family: "Poppins", sans-serif;
+// 		background-color: #fff;
+// 		color: #05274e;
+// `;
+
+const Body = styled.body`
+	font-family: "Poppins", sans-serif;
+	background-color: #fff;
+	color: #05274e;
 `;
