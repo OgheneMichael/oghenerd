@@ -39,10 +39,8 @@ export default class MyDocument extends Document {
 	}
 }
 
-const GlobalStyle = createGlobalStyle`
-  body {
+const GlobalStyle = createGlobalStyle.body` 
 		font-family: "Poppins", sans-serif;
 		background-color: #fff;
 		color: #05274e;
-  }
 `;
