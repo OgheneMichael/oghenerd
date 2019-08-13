@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+	font-family: "Poppins", sans-serif !important;
 	padding: 0 15px;
 	margin: 0 auto;
 	max-width: 1100px;
